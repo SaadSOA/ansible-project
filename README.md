@@ -59,6 +59,7 @@ $ sudo vi create_ec2.yaml
 
 ```yml
 ---
+ ---
  - name: Provisioning EC2 instances using Ansible
    hosts: localhost
    connection: local
@@ -66,13 +67,13 @@ $ sudo vi create_ec2.yaml
    tags: provisioning
 
    vars:
-     keypair: MyEC2Key                            # change
+     keypair: ansiblekey                            # change
      instance_type: t2.small
-     image: ami-020db2c14939a8efb                 # change
+     image: ami-0e8d228ad90af673b                 # change
      wait: yes
      group: webserver
      count: 1
-     region: us-east-2                            # change (optional)
+     region: eu-west-2                            # change (optional)
      security_group: my-security-grp
    
    tasks:
