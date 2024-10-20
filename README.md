@@ -18,7 +18,7 @@ $ ssh -i /path/to/your/file.pem ubuntu@ec2-XX-XX-XXX-XXX.eu-west-2.compute.amazo
 ```zsh
 $ sudo apt-get update
 
-$ sudo apt-add repository -y ppa:ansible/ansible
+$ sudo apt-add-repository ppa:ansible/ansible
 
 $ sudo apt-get update
 
